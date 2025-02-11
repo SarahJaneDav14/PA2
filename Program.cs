@@ -1,7 +1,7 @@
 ﻿//main
 
-string userInput = GetUserInput();
-while(userInput != "exit" && userInput != "4")
+string userInput = GetUserInput(); // prime read
+while(userInput != "4") //argument
 {
     string navigationPrompt = Navigation(userInput);
     string activity = TravelServiceActivity(navigationPrompt);
@@ -12,7 +12,8 @@ while(userInput != "exit" && userInput != "4")
     {
         DisplayTravelPlans(activity, arrival);
     }
-    userInput = GetUserInput();
+    ConsumerSurvey();
+    userInput = GetUserInput(); //update read
 }
 System.Console.WriteLine("Thank you :)");
 
@@ -266,3 +267,14 @@ static void ShippingInvoice(string navigationPrompt)
     }
 }
 
+static void ConsumerSurvey()
+{
+    System.Console.WriteLine("\nOn a scale of 1-10 how would you rate this sevice on quality");
+    double quality = double.Parse(Console.ReadLine());
+    System.Console.WriteLine("\nOn a scale of 1-10 how effective was this service");
+    double effective = double.Parse(Console.ReadLine());
+    System.Console.WriteLine("\nOn a scale of 1-10 how happy did this service make you");
+    double happiness = double.Parse(Console.ReadLine());
+    double rating = (quality+effective+happiness)/3;
+    System.Console.WriteLine($"Thank you for rating this service! You rated it {rating}");
+}

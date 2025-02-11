@@ -12,3 +12,4 @@ C:\Users\sarah\Documents\MIS_221\PA\PA2\obj\Debug\net8.0\refint\PA2.dll
 C:\Users\sarah\Documents\MIS_221\PA\PA2\obj\Debug\net8.0\PA2.pdb
 C:\Users\sarah\Documents\MIS_221\PA\PA2\obj\Debug\net8.0\PA2.genruntimeconfig.cache
 C:\Users\sarah\Documents\MIS_221\PA\PA2\obj\Debug\net8.0\ref\PA2.dll
+C:\Users\sarah\Documents\MIS_221\PA\PA2\obj\Debug\net8.0\PA2.sourcelink.json
