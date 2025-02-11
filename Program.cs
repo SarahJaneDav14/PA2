@@ -19,12 +19,14 @@ System.Console.WriteLine("Thank you :)");
 
 //end main
 
+//menu
 static string GetUserInput()
 {
     System.Console.WriteLine("\nSelect what you want.\n1. Convert Currency\n2. Shipping Invoice\n3. Travel Service\n4. Exit\n");
     return Console.ReadLine().ToLower();
 }
 
+//routing user
 static string Navigation(string userInput)
 {
     switch (userInput)
@@ -48,6 +50,7 @@ static string Navigation(string userInput)
     return Console.ReadLine();
 }
 
+//extra: travel service activity
 static string TravelServiceActivity(string navigationPrompt)
 {
     switch (navigationPrompt)
@@ -79,6 +82,7 @@ static string TravelServiceActivity(string navigationPrompt)
     }
 }
 
+//extra: travel service arrival
 static string TravelServiceArrival(string activity)
 {
     switch (activity)
@@ -110,11 +114,13 @@ static string TravelServiceArrival(string activity)
     }
 }
 
+//extra: travel service display plans
 static void DisplayTravelPlans(string activity, string arrival)
 {
     System.Console.WriteLine($"Have so much fun with your plans! Your options for your destination are to {activity}. You must know that you should {arrival} Safe travels on the deadly seven seas!");
 }
 
+//convert currency
 static void ConvertCurrency(string navigationPrompt)
 {
     if (navigationPrompt == "Japanese Yen" || navigationPrompt == "japanese yen")
@@ -154,6 +160,7 @@ static void ConvertCurrency(string navigationPrompt)
     }
 }
 
+//shipping invoice
 static void ShippingInvoice(string navigationPrompt)
 {
     if (navigationPrompt == "shipping invoice")
@@ -267,6 +274,7 @@ static void ShippingInvoice(string navigationPrompt)
     }
 }
 
+//extra: user survey
 static void ConsumerSurvey()
 {
     System.Console.WriteLine("\nOn a scale of 1-10 how would you rate this sevice on quality");
